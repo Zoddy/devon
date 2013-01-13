@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+/**
+ * devserver
+ * https://github.com/zoddy/devserver
+ *
+ * Copyright (c) 2013 André Kussmann
+ * Licensed under the MIT license.
+ */
+
+var devserver = require('../lib/devserver');
