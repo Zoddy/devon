@@ -14,7 +14,6 @@ Argument       |Content        |Description               |Default
 -s, --silent   |none \| boolean|prevents the log messages |false
 
 - `-d, --daemonize` does not need a value (but you can set `true` or `false` if you want)
-- `-c, --config` if you not set one, devserver will try to load `.devserver`. if there is no one, it's absolutely ok
 
 ## Document location
 Some note to where the devserver loads: In the directory where you start, the devserver will take this as document location and all paths in the url are relative to that.
