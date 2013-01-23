@@ -8,10 +8,10 @@ Set the argument followed by an equal sign and the value, like `--port=9090`.
 
 Argument       |Content        |Description               |Default
 ---------------|---------------|--------------------------|-------
--d, --daemonize|none \| boolean|daemon server             |false
+-d, --daemonize|none or boolean|daemon server             |false
 -h, --help     |none           |shows a short help message|
 -p, --port     |number         |port number               |8080
--s, --silent   |none \| boolean|prevents the log messages |false
+-s, --silent   |none or boolean|prevents the log messages |false
 
 - `-d, --daemonize` does not need a value (but you can set `true` or `false` if you want)
 
