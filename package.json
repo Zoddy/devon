@@ -1,5 +1,6 @@
 {
   "name": "devserver",
+  "preferGlobal": true,
   "version": "0.5.0",
   "description": "Very lightweight development webserver",
   "main": "app.js",
