@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * devserver
- * https://github.com/zoddy/devserver
+ * devon
+ * https://github.com/zoddy/devon
  *
  * Copyright (c) 2013 André Kussmann
  * Licensed under the MIT license.
@@ -11,12 +11,12 @@
 'use strict';
 
 var defaultConfig = require('../lib/default.json'),
-    devserver = require('../lib/app'),
+    devon = require('../lib/app'),
     args = require('optimist')
-      .usage('Usage: devserver [-c] [-d] [-h] [-p] [-s]')
+      .usage('Usage: devon [-c] [-d] [-h] [-p] [-s]')
       .options('config', {
         'alias': 'c',
-        'default': '.devserver',
+        'default': '.devon',
         'describe': 'sets the configuration path',
         'string': true
       })
@@ -53,4 +53,4 @@ var defaultConfig = require('../lib/default.json'),
       })
       .argv;
 
-devserver.init(args);
+devon.init(args);

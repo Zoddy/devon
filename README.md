@@ -1,8 +1,8 @@
-# devserver
+# devon
 Lightweight Development HTTP Server written in nodejs
 
 ## Usage
-If you installed devserver global, you only have to switch to your project directory and type in your terminal `devserver`, hit enter and have fun.
+If you installed devon global, you only have to switch to your project directory and type in your terminal `devon`, hit enter and have fun.
 
 ## Arguments
 
@@ -18,10 +18,10 @@ Argument       |Content        |Description               |Default
 - `-d, --daemonize` does not need a value (but you can set `true` or `false` if you want)
 
 ## Document location
-Some note to where the devserver loads: In the directory where you start, the devserver will take this as document location and all paths in the url are relative to that.
+Some note to where devon loads files: In the directory where you start, devon will take this as document location and all paths in the URL are relative to that.
 
 ## Proxy
-Devserver has a simple reverse proxy handling. Add a `.proxy`-named file to the document location with content like this (example):
+Devon has a simple reverse proxy handling. Add a `.proxy`-named file to the document location with content like this (example):
 
 ```
 {
