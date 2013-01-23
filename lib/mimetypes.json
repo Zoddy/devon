@@ -1,0 +1,13 @@
+{
+  "bmp": "image/bmp",
+  "css": "text/css",
+  "gif": "image/gif",
+  "jpg": "image/jpeg",
+  "jpeg": "image/jpeg",
+  "js": "text/javascript",
+  "json": "application/json",
+  "html": "text/html",
+  "md": "text/x-markdown",
+  "png": "image/png",
+  "woff": "application/font-woff"
+}

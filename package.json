@@ -6,12 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/meecrom/devserver.git"
+  },
   "keywords": [
     "webserver",
     "http",
     "https"
   ],
   "author": "André Kussmann",
-  "license": "MIT"
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "optimist": "~0.3.5"
+  },
+  "devDependencies": {}
 }

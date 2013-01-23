@@ -8,4 +8,48 @@
  * Licensed under the MIT license.
  */
 
-var devserver = require('../lib/devserver');
+'use strict';
+
+var devserver = require('../lib/app'),
+    args = require('optimist')
+      .usage('Usage: devserver [-c] [-d] [-h] [-p] [-s]')
+      .options('config', {
+        'alias': 'c',
+        'default': '.devserver',
+        'describe': 'sets the configuration path',
+        'string': true
+      })
+      .options('daemonize', {
+        'alias': 'd',
+        'boolean': true,
+        'default': false,
+        'describe': 'runs the server as daemon'
+      })
+      .options('help', {
+        'alias': 'h',
+        'boolean': true,
+        'default': false,
+        'describe': 'shows this help message'
+      })
+      .options('port', {
+        'alias': 'p',
+        'default': 8080,
+        'describe': 'sets the port',
+        'number': true
+      })
+      .options('silent', {
+        'alias': 's',
+        'boolean': true,
+        'default': false,
+        'describe': 'prevent log messages'
+      })
+      .check(function(args) {
+        return (
+          typeof(args.port) === 'number' &&
+          typeof(args.daemonize) === 'boolean' &&
+          args.help === false
+        );
+      })
+      .argv;
+
+devserver.init(args);
