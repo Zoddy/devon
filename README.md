@@ -1,6 +1,8 @@
 # devserver
 Lightweight Development HTTP Server written in nodejs
 
+## Usage
+If you installed devserver global, you only have to switch to your project directory and type in your terminal `devserver`, hit enter and have fun.
 
 ## Arguments
 
