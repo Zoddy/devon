@@ -34,6 +34,13 @@ Devon has a simple reverse proxy handling. Add a `.proxy`-named file to the docu
 
 The top-level keys are regular expressions. And the objects to them are the target for the proxy. The content of the first braces is the new request url for the target. So in this example (if you come from `localhost:8080`) you will get `http://localhost:8080/couchdb/foodb` to `http://127.0.0.1:5984/foodb`. 
 
+## Installation
+Just install devon via npm (don't forget the global flag):
+
+```
+npm install devon -g
+```
+
 ## Warning
 Please do not(!) use this server in production mode. It has no security features and it will be easy to get secret data from your server. It's really only for local (max. office or something like that) development.
 
