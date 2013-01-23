@@ -94,6 +94,13 @@
 
 <p>The top-level keys are regular expressions. And the objects to them are the target for the proxy. The content of the first braces is the new request url for the target. So in this example (if you come from <code>localhost:8080</code>) you will get <code>http://localhost:8080/couchdb/foodb</code> to <code>http://127.0.0.1:5984/foodb</code>. </p>
 
+<h2>Installation</h2>
+
+<p>Just install devon via npm (don't forget the global flag):</p>
+
+<pre><code>npm install devon -g
+</code></pre>
+
 <h2>Warning</h2>
 
 <p>Please do not(!) use this server in production mode. It has no security features and it will be easy to get secret data from your server. It's really only for local (max. office or something like that) development.</p>
