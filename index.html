@@ -50,12 +50,6 @@
 <th>Default</th>
 </tr>
 <tr>
-<td>-d, --daemonize</td>
-<td>none or boolean</td>
-<td>daemon server</td>
-<td>false</td>
-</tr>
-<tr>
 <td>-h, --help</td>
 <td>none</td>
 <td>shows a short help message</td>
@@ -73,12 +67,13 @@
 <td>prevents the log messages</td>
 <td>false</td>
 </tr>
-</table><ul>
-<li>
-<code>-d, --daemonize</code> does not need a value (but you can set <code>true</code> or <code>false</code> if you want)</li>
-</ul><h2>Document location</h2>
+</table><h2>Document location</h2>
 
 <p>Some note to where devon loads files: In the directory where you start, devon will take this as document location and all paths in the URL are relative to that.</p>
+
+<h2>Directory Indexing</h2>
+
+<p>If devon looks on a directory, you will get a simple HTML list from files and directories in there.</p>
 
 <h2>Proxy</h2>
 
