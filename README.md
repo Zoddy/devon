@@ -20,6 +20,9 @@ Argument       |Content        |Description               |Default
 ## Document location
 Some note to where devon loads files: In the directory where you start, devon will take this as document location and all paths in the URL are relative to that.
 
+## Directory Indexing
+If devon looks on a directory, you will get a simple HTML list from files and directories in there.
+
 ## Proxy
 Devon has a simple reverse proxy handling. Add a `.proxy`-named file to the document location with content like this (example):
 
